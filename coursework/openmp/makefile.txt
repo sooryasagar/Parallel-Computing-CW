@@ -1,0 +1,8 @@
+
+openmp.c : gcc -fopenmp -c openmp.c -lssl -lcrypto
+
+
+output:    gcc -fopenmp openmp.o -o result -lssl -lcrypto
+
+
+run:       ./result

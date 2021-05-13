@@ -1,0 +1,6 @@
+
+serial.c: gcc -c serial.c -lssl -lcrypto
+
+output:   gcc serial.o -o result -lssl -lcrypto
+
+run:      ./result

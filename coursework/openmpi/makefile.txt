@@ -1,0 +1,7 @@
+
+mpi.c : gcc -fopenmp -c mpi.c -lssl -lcrypto
+
+output: mpicc mpi.o -o result-lssl -lcrypto
+
+
+run:    mpirun -np 4 result
